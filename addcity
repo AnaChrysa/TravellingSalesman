@@ -1,3 +1,4 @@
+numba.njit
 def addcity(path):
     for city in cities[path[-1]]:
         if city not in path:
