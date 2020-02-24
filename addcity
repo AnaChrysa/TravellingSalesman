@@ -1,5 +1,5 @@
 numba.njit
-def addcity(path):
+def addcity(path,cities,mincost,n):
     for city in cities[path[-1]]:
         if city not in path:
             if path[-1]!=1 or sneakers(city,path,cities):
