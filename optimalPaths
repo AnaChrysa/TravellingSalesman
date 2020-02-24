@@ -18,7 +18,7 @@ def optimalPaths(n,a):
         newPaths = []
         while len(paths):
             path=paths.pop()
-            addcity(path)
+            addcity(path,cities,mincost,n)
         for path in tempPaths:
             if path[0]<=mincost:
                 if sos(path,n):
