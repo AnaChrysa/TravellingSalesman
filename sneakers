@@ -1,4 +1,4 @@
-numba.nijit
+numba.njit
 def sneakers(city,path,cities):
   i=1
   while i<(len(path)-1):
