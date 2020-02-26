@@ -1,3 +1,4 @@
+numba.njit
 def sos(c, n):
   city = 1
   while city < n + 1:
