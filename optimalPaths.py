@@ -18,9 +18,6 @@ def optimalPaths(n,a,b):
         newPaths = []
         while len(paths):
             path=paths.pop()
-<<<<<<< HEAD:optimalPaths.py
-            addcity(path,cities,mincost,n)
-=======
             for city in cities[path[-1]]:
                     if city not in path:
                         if path[-1]!=1 or sneakers(city,path,cities):
@@ -40,7 +37,6 @@ def optimalPaths(n,a,b):
                                 tempPaths.append(newPath)
                                 if sos(newPath,n):
                                     mincost = newPath[0]
->>>>>>> parent of cc45d8b... Update optimalPaths:optimalPaths
         for path in tempPaths:
             if path[0]<=mincost:
                 if path.count(1)<b:
