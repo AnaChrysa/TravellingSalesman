@@ -8,9 +8,9 @@ def sneakers(city,path,cities):
       elif i==1:
            if city in cities[path[2]]:
                return False
-       elif i==len(path)-1:
+      elif i==len(path)-1:
            if city in cities[path[-2]]:
                return False
-       i+=(path[i+1:].index(1)+1)
-   return True
+      i+=(path[i+1:].index(1)+1)
+  return True
   
