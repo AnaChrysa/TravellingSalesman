@@ -1,4 +1,3 @@
-numba.njit
 def cost(cities): 
   c = 0
   i = 1
