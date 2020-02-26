@@ -1,4 +1,4 @@
-def optimalPaths(n,a):
+def optimalPaths(n,a,b):
     mincost=a
     paths=[[]]
     leaves=[]
@@ -21,11 +21,12 @@ def optimalPaths(n,a):
             addcity(path,cities,mincost,n)
         for path in tempPaths:
             if path[0]<=mincost:
-                if sos(path,n):
-                    mincost=path[0]
-                    leaves.append(path)
-                else:
-                    newPaths.append(path)
+                if path.count(1)<b:
+                    if sos(path,n):
+                        mincost=path[0]
+                        leaves.append(path)
+                    else:
+                        newPaths.append(path)
         paths = newPaths
         L += 1
     print('The minimum cost to visit', n,'cities is:', mincost)
