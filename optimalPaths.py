@@ -33,7 +33,7 @@ def optimalPaths(n,a,b):
                         newPath[0] += newPath[-2]
                         newPath=simplify(newPath)
                         if not (newPath in tempPaths):
-                            if newPath[0] <= mincost:
+                            if newPath[0] <= mincost and path.count(1)<6:
                                 tempPaths.append(newPath)
                                 if sos(newPath,n):
                                     mincost = newPath[0]
