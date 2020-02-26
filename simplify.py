@@ -1,3 +1,4 @@
+numba.njit
 def simplify(path):
   path=path[::-1]
   del path[0]
